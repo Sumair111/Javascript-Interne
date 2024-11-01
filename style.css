@@ -1,55 +1,63 @@
 *{
-    padding: 0;
     margin: 0;
-}
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
 }
 
-.app{ width: 20vw;
-    height: 60vh;
+body{
+    display: flex;
+    justify-content: center;
+}
+ul {font-size: 20px;
+    display: flex;
+    list-style: none;
     margin: auto;
+    position: relative;
+    justify-content: space-evenly;
    
 }
-.bgimg{
-    width: 20vw;
-    height: 60vh;
-    position: absolute;
-    opacity: 0.5;
+
+ul li{
+ text-decoration: underline;
+}
+#cal{
+    border: 2px solid grey ;
+    width: 300px;
+    height: 400px
+}
+#btn{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
 
 }
-.text{
-display: flex;
-flex-direction: column;
-z-index: 10;
-position: relative;
-align-items: center;
-padding: 10px;
-row-gap: 10px;
-}
 
-
-
-#increment-button{
-    border-radius: 2px;
-    width: 140px;
-    padding: 5px;
-    background-color: rgb(126, 14, 14);
-    border-color:rgb(126, 14, 14) ;
+.operator{
+    display: flex;
+    background-color: rgb(105, 26, 26);
     color: white;
-    font-weight: bold;
-    font-size:  15px;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    
 }
-
-#save-btn{
-    border-radius: 2px;
-    width: 140px;
-    padding: 5px;
-    background-color: rgb(95, 86, 86);
-    border-color:rgb(82, 80, 80) ;
+.output{
     color: white;
-    font-weight: bold;
-    font-size:  15px;
+    background: gray;
+    border: 2px solid grey;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;}
+p{
+    text-decoration: underline;
 }
-
-
+#answer{
+    display: flex;
+    margin-top: 30px;
+    column-gap : 10px;
+}

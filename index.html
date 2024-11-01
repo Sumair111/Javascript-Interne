@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passenger Counter App</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
-        <img class="bgimg" src="https://images.pexels.com/photos/28942053/pexels-photo-28942053/free-photo-of-rustic-french-stone-house-with-red-door.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-    <div class="text">
-    <h1> People entered: </h1>
-    <h1 id="change">0</h1>
-   <button id="increment-button" onclick="increment()"> INCREMENT </button>
-   <button id="save-btn" onclick="save()">SAVE</button>
+<div id="cal">
+    <ul class="output">
+        <li id="num1-el"></li>
+        <li id="num2-el"></li>
+    </ul>
+    <ul id="btn">
+    <button class="operator" onclick="add()">Add</button>
+    <button class="operator" onclick="subtract()">Subtract</button>
+    <button class="operator" onclick="divide()">Divide</button>
+    <button class="operator" onclick="multiply()">Multiply</button>
+    <ul id="answer">
+    <p id="function"> Sum: </p>
+    <p id="sum-el">0</p></ul>
+    <script src="script.js"> </script>
+</ul>
+
 </div>
-    </div>
-    <script src="createSavebutton.js"> </script>
 </body>
 </html>
